@@ -1,0 +1,42 @@
+@import '../../scssFoundation/color';
+@import '../../scssFoundation/typography';
+@import '../../scssFoundation/variable'; 
+
+.memberContainer{
+    margin: 2px 0px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    .memberImgdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{ 
+        text-transform: uppercase;
+        font-family: $body-font-family;
+        font-size: $h-4-font-size;
+        font-weight: $h-4-font-weight; 
+        }
+        .memberDetails{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 5px;
+        li{
+            span{
+                margin-left: 10px;
+            }
+        }
+       }
+    }
+    }
+}
